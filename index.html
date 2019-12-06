@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<!— Import bootstrap and Latest compiled and minified CSS —>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Import jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+<style>
+    html,
+    body {
+        height: 100%;
+        background: #121617;
+    }
+
+    body {
+        padding-top: 54px;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+    }
+
+    @media only screen and (min-width: 950px) {
+        .container {
+            background-color: #121617;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .navbar-custom {
+        background: #121617;
+        width: 100%;
+        border: 0px solid #d1e8e2;
+        -webkit-box-shadow: 0 2px 4px rgba(158, 16, 30, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 2px 4px rgba(158, 16, 30, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 2px 4px rgba(158, 16, 30, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        margin: 0 auto;
+    }
+
+    .navbar-text {
+        height: 24px;
+        font-size: 24px;
+        font-family: Open Sans, sans-serif;
+        letter-spacing: 5px;
+        text-align: center;
+        display: inline-block;
+        float: none;
+    }
+
+    .limit-width {
+        max-width: 950px;
+    }
+
+    .limit-width-footer {
+        max-width: 665px;
+    }
+
+    .container {
+        background-color: #121617;
+        height: 100%;
+        width: 100%;
+    }
+
+    .green-container {
+        background: #121617;
+        width: auto;
+        display: block;
+    }
+
+    .black-container {
+        background: #121617;
+        width: auto;
+        display: block;
+    }
+
+    .btn {
+        font-family: Open Sans, sans-serif;
+    }
+
+    .nextButton {
+        width: 70%;
+        background: #9e101e;
+        height: 45px;
+        border: 0px solid #C0C0C0;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .nextButton:hover {
+        background: #7e0c18;
+        border: 0px solid #C0C0C0;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .reglogButton {
+        line-height: 35px;
+        background: #808080;
+        height: 50%;
+        border: 1px solid #C0C0C0;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .reglogButton:hover {
+        background: #696969;
+        height: 50%;
+        border: 1px solid #C0C0C0;
+        color: #fff;
+    }
+
+    .reglogButton:active {
+        background: #696969;
+        height: 50%;
+        border: 1px solid #116466;
+        color: #fff;
+    }
+
+    .qpButton {
+        width: 70%;
+        background: #333333;
+        height: 45px;;
+        border: 0px solid #d9b08c;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    .qpButton:hover {
+        background: #666666;
+        border: 0px solid #2c3531;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    .header-container {
+        width: 70%;
+        color: #9e101e;
+        font-size: 20px;
+        text-align: left;
+        margin-top: 32px;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .text-container {
+        width: 70%;
+        color: #eeeeee;
+        font-size: 18px;
+        text-align: center;
+        text-align: justify;
+        text-justify: distribute;
+        line-height: 25px;
+    }
+
+    .role-header-spacing {
+        margin-top: 10px;
+    }
+
+    .role-spacing {
+        margin-bottom: 10px;
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+
+</style>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resistance</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108056592-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108056592-1');
+    </script>
+</head>
+
+<body style='background-color: #2A2A2A;'>
+
+<div class="container">
+
+    <style>
+    .navbar-custom {
+        background: #121617;
+        width: 100%;
+        border: 0px solid #d1e8e2;
+        -webkit-box-shadow: 0 2px 4px rgba(158, 16, 30, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        -moz-box-shadow: 0 2px 4px rgba(158, 16, 30, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        box-shadow: 0 2px 4px rgba(158, 16, 30, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        margin: 0 auto;
+    }
+
+    .navbar-text {
+        height: 24px;
+        font-size: 24px;
+        font-family: Open Sans, sans-serif;
+        letter-spacing: 5px;
+        text-align: center;
+        display: inline-block;
+        float: left;
+    }
+
+    .navbar-logo {
+        float: right;
+        margin-right: 15px;
+        margin-top: 2px;
+    }
+</style>
+
+<!-- TOP BAR -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div>
+        <a onclick="return confirm('Return to Homepage and quit the current game?')"
+           class="navbar-brand navbar-text"
+           href="/resistance/"
+           style='padding-top: 3px; padding-bottom: 10px; color: #eeeeee;'>RESISTANCE</a>
+    </div>
+    <div>
+        <a onclick="return confirm('Return to Monabgames Homepage and quit the current game?')"
+           href="/">
+            <ul class="nav navbar-logo">
+                <img href="/" class="img-responsive"
+                     src="/static/guac_logo_only.png"
+                     alt="Chania" style="width: auto; max-height: 30px; margin-top: 10px; margin-bottom:0px;">
+            </ul>
+        </a>
+    </div>
+</nav><!-- TOP BAR -->
+
+    <form action="/resistance/process-start-match/" method="post"> <input type='hidden' name='csrfmiddlewaretoken' value='TBmYKY0DCQKwvUmE6O8G5H0IbOROOoa29UdCIfyVs7ilhhpAHl2HVTvMkAcxL5dM' />
+        <input id="match_id" type="hidden" name="match_id" value="jtrxh">
+        <!-- ADD NAMES -->
+        <div class="row green-container">
+
+            <p id="Error"></p>
+
+            <div class="center-block limit-width" style="margin-bottom: 20px;">
+
+                <div class="row center-block header-container">
+                    PLAYERS CHARACTERS
+                </div>
+
+                <div class="row center-block text-container"
+                     style="font-size: 16px; text-align: left;">
+                    Click to show your character, and click again to hide it.
+                </div>
+
+                
+
+                    <p>
+                        <button class='center-block btn btn-primary qpButton' type='button'
+                                data-toggle='collapse' data-target='#38501' aria-expanded='false'
+                                aria-controls='collapseExample'>
+                            a
+                        </button>
+                    </p>
+                    <div class='collapse role no-transition' id='38501'>
+                        <div class='card card-block text-container'
+                             style='width: 100%; font-size: 16px; text-align: center; margin-bottom: 25px;'>
+                            <strong>Your Character:</strong><br>Merlin<br><br><strong>Other Evils</strong><br>Note: The Mordred(Evil) will not be revealed.
+                        </div>
+                    </div>
+
+                
+
+                    <p>
+                        <button class='center-block btn btn-primary qpButton' type='button'
+                                data-toggle='collapse' data-target='#38502' aria-expanded='false'
+                                aria-controls='collapseExample'>
+                            s
+                        </button>
+                    </p>
+                    <div class='collapse role no-transition' id='38502'>
+                        <div class='card card-block text-container'
+                             style='width: 100%; font-size: 16px; text-align: center; margin-bottom: 25px;'>
+                            <strong>Your Character:</strong><br>Servant<br>
+                        </div>
+                    </div>
+
+                
+
+                    <p>
+                        <button class='center-block btn btn-primary qpButton' type='button'
+                                data-toggle='collapse' data-target='#38503' aria-expanded='false'
+                                aria-controls='collapseExample'>
+                            f
+                        </button>
+                    </p>
+                    <div class='collapse role no-transition' id='38503'>
+                        <div class='card card-block text-container'
+                             style='width: 100%; font-size: 16px; text-align: center; margin-bottom: 25px;'>
+                            <strong>Your Character:</strong><br>Percival<br><br><strong>Merlin</strong><br>a<br>Note: If there are 2 names, one of them is the Merlin(Good) and the other, Morgana(Evil).
+                        </div>
+                    </div>
+
+                
+
+                    <p>
+                        <button class='center-block btn btn-primary qpButton' type='button'
+                                data-toggle='collapse' data-target='#38504' aria-expanded='false'
+                                aria-controls='collapseExample'>
+                            h
+                        </button>
+                    </p>
+                    <div class='collapse role no-transition' id='38504'>
+                        <div class='card card-block text-container'
+                             style='width: 100%; font-size: 16px; text-align: center; margin-bottom: 25px;'>
+                            <strong>Your Character:</strong><br>Servant<br>
+                        </div>
+                    </div>
+
+                
+
+                    <p>
+                        <button class='center-block btn btn-primary qpButton' type='button'
+                                data-toggle='collapse' data-target='#38505' aria-expanded='false'
+                                aria-controls='collapseExample'>
+                            j
+                        </button>
+                    </p>
+                    <div class='collapse role no-transition' id='38505'>
+                        <div class='card card-block text-container'
+                             style='width: 100%; font-size: 16px; text-align: center; margin-bottom: 25px;'>
+                            <strong>Your Character:</strong><br>Servant<br>
+                        </div>
+                    </div>
+
+                
+
+                    <p>
+                        <button class='center-block btn btn-primary qpButton' type='button'
+                                data-toggle='collapse' data-target='#38506' aria-expanded='false'
+                                aria-controls='collapseExample'>
+                            l
+                        </button>
+                    </p>
+                    <div class='collapse role no-transition' id='38506'>
+                        <div class='card card-block text-container'
+                             style='width: 100%; font-size: 16px; text-align: center; margin-bottom: 25px;'>
+                            <strong>Your Character:</strong><br>Servant<br>
+                        </div>
+                    </div>
+
+                
+
+            </div>
+
+        </div>
+
+
+        <!-- UNDERCOVERS & MR.W -->
+        <div class="row black-container">
+            <hr/>
+            <div class="center-block limit-width">
+                <!-- NEXT BUTTON -->
+                <button type="submit" class="center-block btn btn-primary btn-responsive nextButton"
+                        style="margin-top: 32px; margin-bottom: 32px; height: 90px;">NEXT
+                </button><!-- NEXT BUTTON -->
+
+            </div>
+
+        </div>
+
+    </form>
+
+
+</div>
+
+<script>
+    (function (global) {
+        if (typeof (global) === "undefined") {
+            throw new Error("window is undefined");
+        }
+        var _hash = "!";
+        var noBackPlease = function () {
+            global.location.href += "#";
+            global.setTimeout(function () {
+                global.location.href += "!";
+            }, 50);
+        };
+        global.onhashchange = function () {
+            if (global.location.hash !== _hash) {
+                global.location.hash = _hash;
+            }
+        };
+        global.onload = function () {
+            noBackPlease();
+            document.body.onkeydown = function (e) {
+                var elm = e.target.nodeName.toLowerCase();
+                if (e.which === 8 && (elm !== 'input' && elm !== 'textarea')) {
+                    e.preventDefault();
+                }
+                e.stopPropagation();
+            };
+        }
+    })(window);
+</script>
+
+</body>
+
+</html>

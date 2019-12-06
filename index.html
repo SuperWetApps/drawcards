@@ -1,5 +1,6 @@
 
 <!DOCTYPE html>
+
 <!— Import bootstrap and Latest compiled and minified CSS —>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,7 +16,7 @@
     html,
     body {
         height: 100%;
-        background: #121617;
+        background: #CCCCCC;
     }
 
     body {
@@ -29,30 +30,10 @@
 
     @media only screen and (min-width: 950px) {
         .container {
-            background-color: #121617;
+            background-color: white;
             height: 100%;
             width: 100%;
         }
-    }
-
-    .navbar-custom {
-        background: #121617;
-        width: 100%;
-        border: 0px solid #d1e8e2;
-        -webkit-box-shadow: 0 2px 4px rgba(158, 16, 30, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-        -moz-box-shadow: 0 2px 4px rgba(158, 16, 30, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-        box-shadow: 0 2px 4px rgba(158, 16, 30, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-        margin: 0 auto;
-    }
-
-    .navbar-text {
-        height: 24px;
-        font-size: 24px;
-        font-family: Open Sans, sans-serif;
-        letter-spacing: 5px;
-        text-align: center;
-        display: inline-block;
-        float: none;
     }
 
     .limit-width {
@@ -64,7 +45,7 @@
     }
 
     .container {
-        background-color: #121617;
+        background-color: #CCCCCC;
         height: 100%;
         width: 100%;
     }
@@ -86,17 +67,16 @@
     }
 
     .nextButton {
-        width: 70%;
-        background: #9e101e;
+        background: #808080;
         height: 45px;
-        border: 0px solid #C0C0C0;
+        border: 1px solid #C0C0C0;
         color: #fff;
         font-size: 18px;
     }
 
     .nextButton:hover {
-        background: #7e0c18;
-        border: 0px solid #C0C0C0;
+        background: #696969;
+        border: 1px solid #C0C0C0;
         color: #fff;
         font-size: 18px;
     }
@@ -127,7 +107,7 @@
     .qpButton {
         width: 70%;
         background: #333333;
-        height: 45px;;
+        height: 91px;;
         border: 0px solid #d9b08c;
         color: #ffffff;
         font-size: 20px;
@@ -178,8 +158,6 @@
         width: 80%;
         margin-left: 10%;
     }
-
-
 </style>
 
 
@@ -187,7 +165,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Resistance</title>
+    <meta name="description"
+          content="Don't have the board game? Play The Resistance + Avalon face-to-face with your friends with this web app. Only 1 device required!">
+    <meta name="keywords" content="the resistance online, the resistance, the resistance avalon">
+    <title>The Resistance Online + Avalon</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108056592-1"></script>
     <script>
@@ -253,174 +234,147 @@
     </div>
 </nav><!-- TOP BAR -->
 
-    <form action="/resistance/process-start-match/" method="post"> <input type='hidden' name='csrfmiddlewaretoken' value='TBmYKY0DCQKwvUmE6O8G5H0IbOROOoa29UdCIfyVs7ilhhpAHl2HVTvMkAcxL5dM' />
-        <input id="match_id" type="hidden" name="match_id" value="jtrxh">
-        <!-- ADD NAMES -->
-        <div class="row green-container">
+    <!-- ADD NAMES -->
+    <div class="row green-container">
 
-            <p id="Error"></p>
+        <div class="center-block limit-width">
 
-            <div class="center-block limit-width" style="margin-bottom: 20px;">
+            <div>
+                <img class="img-responsive"
+                     src="/static/ra-banner.a0368668c458.jpg"
+                     alt="Chania" style="margin: 0 auto; margin-top: 0px; margin-bottom:32px; display: block;">
+            </div>
 
+            <form action="/resistance/play/" method="post"><input type='hidden' name='csrfmiddlewaretoken' value='dWIAh8WOpAJNDa4OWRw2z0zgqblixuJCtfzefpu6fRhCpx7Kxoq3pc4kzXG1ubMm' />
+                <button class="center-block btn btn-primary qpButton"
+                style="margin-bottom: 25px; background: #9e101e;"
+                        role="button">
+                    QUICK PLAY
+                </button>
+            </form>
+
+            <form action="/resistance/tutorial/" method="post"><input type='hidden' name='csrfmiddlewaretoken' value='dWIAh8WOpAJNDa4OWRw2z0zgqblixuJCtfzefpu6fRhCpx7Kxoq3pc4kzXG1ubMm' />
+                <button class="center-block btn btn-primary qpButton"
+                        style="margin-bottom: 25px; height: 45px;" role="button">
+                    TUTORIAL
+                </button>
+            </form>
+
+            <form action="https://buymeacoff.ee/monabgames" method="post"><input type='hidden' name='csrfmiddlewaretoken' value='dWIAh8WOpAJNDa4OWRw2z0zgqblixuJCtfzefpu6fRhCpx7Kxoq3pc4kzXG1ubMm' />
+                <button class="center-block btn btn-primary qpButton"
+                        style="margin-bottom: 32px; height: 45px;" role="button">
+                    BUY ME A COFFEE?
+                </button>
+            </form>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- UNDERCOVERS & MR.W -->
+    <div class="row black-container">
+
+        <hr/>
+
+        <div class="center-block limit-width" style="margin-bottom: 32px;">
+            <h1>
                 <div class="row center-block header-container">
-                    PLAYERS CHARACTERS
+                    THE RESISTANCE + AVALON
                 </div>
+            </h1>
 
-                <div class="row center-block text-container"
-                     style="font-size: 16px; text-align: left;">
-                    Click to show your character, and click again to hide it.
+            <h2>
+                <div class="row center-block text-container">
+                    The Resistance is a game where players attempt to deduce one another's identities. Play the Original
+                    version where a resistance group is trying to overthrow a malignant government, or Avalon where the
+                    game
+                    pits the Good people from Arthur versus the evil Mordred and his minions.
                 </div>
+            </h2>
 
-                
+            <h1>
+                <div class="row center-block header-container">
+                    TIPS FOR BEGINNERS, IN 3 MINUTES!
+                </div>
+            </h1>
 
-                    <p>
-                        <button class='center-block btn btn-primary qpButton' type='button'
-                                data-toggle='collapse' data-target='#38501' aria-expanded='false'
-                                aria-controls='collapseExample'>
-                            a
-                        </button>
-                    </p>
-                    <div class='collapse role no-transition' id='38501'>
-                        <div class='card card-block text-container'
-                             style='width: 100%; font-size: 16px; text-align: center; margin-bottom: 25px;'>
-                            <strong>Your Character:</strong><br>Merlin<br><br><strong>Other Evils</strong><br>Note: The Mordred(Evil) will not be revealed.
-                        </div>
-                    </div>
+            <h2>
+                <div class="row center-block text-container">
+                    As a Resistance member, always tell the truth. Remember that the spies know one another and creating
+                    confusion will only harm your team. Many new players will approve teams without a second thought,
+                    unfortunately this will reduce the information that your team can work with. Rejecting will give
+                    more Leaders to pick their crew members and more opportunities for you to see other players' voting
+                    patterns. Use these opportunities to find inconsistencies in players' behaviors and
+                    decisions.<br><br>
 
-                
+                    As a Spy, create confusion. The Resistance members do not know each other and will try to figure out
+                    players' identities throughout the game. To minimize their chances, pretend to be a Resistance
+                    member and target to discredit a real Resistance member consistently. Changing targets may cause
+                    people to be suspicious. New players tend to pass the first mission unconditionally however, this
+                    gives you only 2 more successful missions as buffer. Instead, try to fail the first mission and
+                    blame the other player for failing it. Even if you fail to completely convince the table, the Spies
+                    have 1 more failed mission in their hands.
 
-                    <p>
-                        <button class='center-block btn btn-primary qpButton' type='button'
-                                data-toggle='collapse' data-target='#38502' aria-expanded='false'
-                                aria-controls='collapseExample'>
-                            s
-                        </button>
-                    </p>
-                    <div class='collapse role no-transition' id='38502'>
-                        <div class='card card-block text-container'
-                             style='width: 100%; font-size: 16px; text-align: center; margin-bottom: 25px;'>
-                            <strong>Your Character:</strong><br>Servant<br>
-                        </div>
-                    </div>
+                </div>
+            </h2>
 
-                
+            <h1>
+                <div class="row center-block header-container">
+                    NOTES
+                </div>
+            </h1>
 
-                    <p>
-                        <button class='center-block btn btn-primary qpButton' type='button'
-                                data-toggle='collapse' data-target='#38503' aria-expanded='false'
-                                aria-controls='collapseExample'>
-                            f
-                        </button>
-                    </p>
-                    <div class='collapse role no-transition' id='38503'>
-                        <div class='card card-block text-container'
-                             style='width: 100%; font-size: 16px; text-align: center; margin-bottom: 25px;'>
-                            <strong>Your Character:</strong><br>Percival<br><br><strong>Merlin</strong><br>a<br>Note: If there are 2 names, one of them is the Merlin(Good) and the other, Morgana(Evil).
-                        </div>
-                    </div>
+            <h2>
+                <div class="row center-block text-container">
+                    This is not an official app and this Resistance + Avalon game site will be free forever, ad-free.
+                </div>
+            </h2>
 
-                
-
-                    <p>
-                        <button class='center-block btn btn-primary qpButton' type='button'
-                                data-toggle='collapse' data-target='#38504' aria-expanded='false'
-                                aria-controls='collapseExample'>
-                            h
-                        </button>
-                    </p>
-                    <div class='collapse role no-transition' id='38504'>
-                        <div class='card card-block text-container'
-                             style='width: 100%; font-size: 16px; text-align: center; margin-bottom: 25px;'>
-                            <strong>Your Character:</strong><br>Servant<br>
-                        </div>
-                    </div>
-
-                
-
-                    <p>
-                        <button class='center-block btn btn-primary qpButton' type='button'
-                                data-toggle='collapse' data-target='#38505' aria-expanded='false'
-                                aria-controls='collapseExample'>
-                            j
-                        </button>
-                    </p>
-                    <div class='collapse role no-transition' id='38505'>
-                        <div class='card card-block text-container'
-                             style='width: 100%; font-size: 16px; text-align: center; margin-bottom: 25px;'>
-                            <strong>Your Character:</strong><br>Servant<br>
-                        </div>
-                    </div>
-
-                
-
-                    <p>
-                        <button class='center-block btn btn-primary qpButton' type='button'
-                                data-toggle='collapse' data-target='#38506' aria-expanded='false'
-                                aria-controls='collapseExample'>
-                            l
-                        </button>
-                    </p>
-                    <div class='collapse role no-transition' id='38506'>
-                        <div class='card card-block text-container'
-                             style='width: 100%; font-size: 16px; text-align: center; margin-bottom: 25px;'>
-                            <strong>Your Character:</strong><br>Servant<br>
-                        </div>
-                    </div>
-
-                
-
-            </div>
+            <form action="/resistance/tutorial/" method="post"><input type='hidden' name='csrfmiddlewaretoken' value='dWIAh8WOpAJNDa4OWRw2z0zgqblixuJCtfzefpu6fRhCpx7Kxoq3pc4kzXG1ubMm' />
+                <button class="center-block btn btn-primary qpButton"
+                        style="margin-top: 25px; margin-bottom: 32px; height: 45px;" role="button">
+                    TUTORIAL
+                </button>
+            </form>
 
         </div>
 
+    </div>
 
-        <!-- UNDERCOVERS & MR.W -->
-        <div class="row black-container">
-            <hr/>
-            <div class="center-block limit-width">
-                <!-- NEXT BUTTON -->
-                <button type="submit" class="center-block btn btn-primary btn-responsive nextButton"
-                        style="margin-top: 32px; margin-bottom: 32px; height: 90px;">NEXT
-                </button><!-- NEXT BUTTON -->
+    <div class="row green-container">
 
+        <hr/>
+
+        <div class="center-block limit-width" style="margin-bottom: 32px;">
+            <div class="row center-block" style="width: 70%;
+        color: #9e101e;
+        font-size: 20px;
+        text-align: left;
+        margin-top: 32px;
+        margin-bottom: 5px;
+        font-weight: 600;">
+                MONAB GAMES
             </div>
 
-        </div>
+            <div class="row center-block" style="line-height: 160%;
+        width: 70%;
+        color: #eeeeee;
+        font-size: 20px;
+        text-align: center;
+        text-align: justify;
+        line-height: 35px;
+        text-justify: distribute;">
 
-    </form>
+                <a href="/open-source-credits/" style="color: #eeeeee;=">Open Source Libraries</a><br>
+
+            </div>
+        </div>
+    </div>
 
 
 </div>
-
-<script>
-    (function (global) {
-        if (typeof (global) === "undefined") {
-            throw new Error("window is undefined");
-        }
-        var _hash = "!";
-        var noBackPlease = function () {
-            global.location.href += "#";
-            global.setTimeout(function () {
-                global.location.href += "!";
-            }, 50);
-        };
-        global.onhashchange = function () {
-            if (global.location.hash !== _hash) {
-                global.location.hash = _hash;
-            }
-        };
-        global.onload = function () {
-            noBackPlease();
-            document.body.onkeydown = function (e) {
-                var elm = e.target.nodeName.toLowerCase();
-                if (e.which === 8 && (elm !== 'input' && elm !== 'textarea')) {
-                    e.preventDefault();
-                }
-                e.stopPropagation();
-            };
-        }
-    })(window);
-</script>
 
 </body>
 
